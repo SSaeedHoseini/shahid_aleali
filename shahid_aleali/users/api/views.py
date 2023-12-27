@@ -4,8 +4,9 @@ from rest_framework.decorators import action
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin, UpdateModelMixin
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
+from django.contrib.auth.models import Group
 
-from .serializers import UserSerializer
+from .serializers import GroupSerializer, UserSerializer
 
 User = get_user_model()
 
@@ -23,3 +24,8 @@ class UserViewSet(RetrieveModelMixin, ListModelMixin, UpdateModelMixin, GenericV
     def me(self, request):
         serializer = UserSerializer(request.user, context={"request": request})
         return Response(status=status.HTTP_200_OK, data=serializer.data)
+
+
+class GroupViewSet(ListModelMixin, GenericViewSet):
+    serializer_class = GroupSerializer
+    queryset = Group.objects.all()
