@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "8001"
+            ],
+            "env": {
+                "DJANGO_SETTINGS_MODULE": "config.settings.local"
+            },
+            "django": true,
+            "justMyCode": true,
+            "host": "0.0.0.0"
+        }
+    ]
+}

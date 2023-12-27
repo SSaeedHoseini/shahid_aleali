@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 volumes:
   shahid_aleali_local_postgres_data: {}
@@ -16,11 +16,12 @@ services:
       - redis
     volumes:
       - .:/app:z
+      - ./.vscode-server:/root/.vscode-server/
     env_file:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
-      - '8000:8000'
+      - "8000:8000"
     command: /start
 
   postgres:
@@ -48,7 +49,7 @@ services:
       - ./config:/app/config:z
       - ./shahid_aleali:/app/shahid_aleali:z
     ports:
-      - '9000:9000'
+      - "9000:9000"
     command: /start-docs
 
   redis:
@@ -80,5 +81,5 @@ services:
     image: shahid_aleali_local_flower
     container_name: shahid_aleali_local_flower
     ports:
-      - '5555:5555'
+      - "5555:5555"
     command: /start-flower

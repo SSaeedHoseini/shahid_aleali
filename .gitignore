@@ -279,3 +279,4 @@ shahid_aleali/media/
 .env
 .envs/*
 !.envs/.local/
+.vscode-server/
