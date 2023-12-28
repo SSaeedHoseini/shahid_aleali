@@ -14,7 +14,7 @@
                 "DJANGO_SETTINGS_MODULE": "config.settings.local"
             },
             "django": true,
-            "justMyCode": true,
+            "justMyCode": false,
             "host": "0.0.0.0"
         }
     ]
