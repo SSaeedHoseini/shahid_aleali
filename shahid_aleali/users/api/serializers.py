@@ -38,3 +38,7 @@ class UserWithRolesSerializer(serializers.ModelSerializer):
     class Meta:
         model = myUser
         fields = ["username", "name", "url", "user_groups"]
+
+        extra_kwargs = {
+            "url": {"view_name": "api:user-detail", "lookup_field": "username"},
+        }
