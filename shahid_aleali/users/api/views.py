@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 from django.contrib.auth.models import Group
 
-from .serializers import GroupSerializer, UserSerializer, UserWithRolesSerializer
+from .serializers import GroupSerializer, UserSerializer, UserWithRolesSerializer, UserAvatarSerializer
 
 User = get_user_model()
 
@@ -23,6 +23,14 @@ class UserViewSet(RetrieveModelMixin, ListModelMixin, UpdateModelMixin, GenericV
     @action(detail=False)
     def me(self, request):
         serializer = UserWithRolesSerializer(request.user, context={"request": request})
+        return Response(status=status.HTTP_200_OK, data=serializer.data)
+
+    @action(methods=["PATCH"], detail=True, serializer_class=UserAvatarSerializer)
+    def avatar(self, request, username):
+        instance = self.get_object()
+        serializer = UserAvatarSerializer(instance, data=request.data, partial=True, context={"request": request})
+        if serializer.is_valid():
+            serializer.save()
         return Response(status=status.HTTP_200_OK, data=serializer.data)
 
 
