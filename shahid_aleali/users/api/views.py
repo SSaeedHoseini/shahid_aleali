@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 from django.contrib.auth.models import Group
 
-from .serializers import GroupSerializer, UserSerializer
+from .serializers import GroupSerializer, UserSerializer, UserWithRolesSerializer
 
 User = get_user_model()
 
@@ -22,7 +22,7 @@ class UserViewSet(RetrieveModelMixin, ListModelMixin, UpdateModelMixin, GenericV
 
     @action(detail=False)
     def me(self, request):
-        serializer = UserSerializer(request.user, context={"request": request})
+        serializer = UserWithRolesSerializer(request.user, context={"request": request})
         return Response(status=status.HTTP_200_OK, data=serializer.data)
 
 

@@ -1,16 +1,16 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from shahid_aleali.users.models import User as UserType
+from shahid_aleali.users.models import User
 from django.contrib.auth.models import Group
 
 
-User = get_user_model()
+myUser = get_user_model()
 
 
-class UserSerializer(serializers.ModelSerializer[UserType]):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = myUser
         fields = ["username", "name", "url"]
 
         extra_kwargs = {
@@ -21,4 +21,20 @@ class UserSerializer(serializers.ModelSerializer[UserType]):
 class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
-        fields = "__all__"
+        fields = [
+            "id",
+            "name",
+        ]
+
+
+class UserWithRolesSerializer(serializers.ModelSerializer):
+    user_groups = serializers.SerializerMethodField()
+
+    def get_user_groups(self, obj):
+        return GroupSerializer(
+            instance=Group.objects.filter(id__in=obj.groups.all()).all(), many=True, read_only=True
+        ).data
+
+    class Meta:
+        model = myUser
+        fields = ["username", "name", "url", "user_groups"]
