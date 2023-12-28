@@ -1,0 +1,420 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-27 19:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: schools/models.py:13
+msgid "school"
+msgstr "مدرسه"
+
+#: schools/models.py:14
+msgid "schools"
+msgstr "مدرسه ها"
+
+#: schools/models.py:22
+msgid "teacher"
+msgstr "معلم"
+
+#: schools/models.py:23
+msgid "teachers"
+msgstr "معلم ها"
+
+#: schools/models.py:33
+msgid "student"
+msgstr "دانش آموز"
+
+#: schools/models.py:34
+msgid "students"
+msgstr "دانش آموزان"
+
+#: schools/models.py:41
+msgid "parent"
+msgstr "والد"
+
+#: schools/models.py:42
+msgid "parents"
+msgstr "والدین"
+
+#: schools/models.py:50
+msgid "lesson"
+msgstr "درس"
+
+#: schools/models.py:51
+msgid "lessons"
+msgstr "درس ها"
+
+#: schools/models.py:61
+msgid "class"
+msgstr "کلاس"
+
+#: schools/models.py:62
+msgid "Classes"
+msgstr "کلاس ها"
+
+#: schools/models.py:69
+msgid "academic year"
+msgstr "سال تحصیلی"
+
+#: schools/models.py:70
+msgid "academic years"
+msgstr "سالهای تحصیلی"
+
+#: schools/models.py:77
+msgid "grade level"
+msgstr "مقطع تحصیلی"
+
+#: schools/models.py:78
+msgid "grade levels"
+msgstr "مقاطع تحصیلی"
+
+#: schools/models.py:87
+msgid "exam"
+msgstr "امتحان"
+
+#: schools/models.py:88
+msgid "exams"
+msgstr "امتحانات"
+
+#: schools/models.py:97
+msgid "exam score"
+msgstr "نمره امتحان"
+
+#: schools/models.py:98
+msgid "exam scores"
+msgstr ""
+
+#: schools/models.py:105
+msgid "subject"
+msgstr "موضوع"
+
+#: schools/models.py:106
+msgid "subjects"
+msgstr "موضوع ها"
+
+#: schools/models.py:114
+msgid "teacher subject"
+msgstr "موضوع معلم"
+
+#: schools/models.py:115
+msgid "teacher subjects"
+msgstr "موضوع های معلم"
+
+#: schools/models.py:124
+msgid "attendance"
+msgstr "حضور و غیاب"
+
+#: schools/models.py:125
+msgid "attendances"
+msgstr "حضور و غیاب ها"
+
+#: schools/models.py:136
+msgid "class schedule"
+msgstr "زمان بندی کلاس"
+
+#: schools/models.py:137
+msgid "classe schedules"
+msgstr "زمان بندی کلاس ها"
+
+#: shahid_aleali/templates/account/account_inactive.html:6
+#: shahid_aleali/templates/account/account_inactive.html:9
+msgid "Account Inactive"
+msgstr ""
+
+#: shahid_aleali/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:8
+msgid "Account"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:11
+msgid "E-mail Addresses"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:13
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:28
+msgid "Verified"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:30
+msgid "Unverified"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:33
+msgid "Primary"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:41
+msgid "Make Primary"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:44
+msgid "Re-send Verification"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:47
+msgid "Remove"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:53
+msgid "Warning:"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:53
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:56
+msgid "Add E-mail Address"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:60
+msgid "Add E-mail"
+msgstr ""
+
+#: shahid_aleali/templates/account/email.html:67
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: shahid_aleali/templates/account/email_confirm.html:7
+#: shahid_aleali/templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: shahid_aleali/templates/account/email_confirm.html:14
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: shahid_aleali/templates/account/email_confirm.html:19
+msgid "Confirm"
+msgstr ""
+
+#: shahid_aleali/templates/account/email_confirm.html:24
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: shahid_aleali/templates/account/login.html:8
+#: shahid_aleali/templates/account/login.html:11
+#: shahid_aleali/templates/account/login.html:50
+#: shahid_aleali/templates/base.html:97
+msgid "Sign In"
+msgstr ""
+
+#: shahid_aleali/templates/account/login.html:15
+msgid "Please sign in with one of your existing third party accounts:"
+msgstr ""
+
+#: shahid_aleali/templates/account/login.html:17
+#, python-format
+msgid ""
+"Or, <a href=\"%(signup_url)s\">sign up</a> for a %(site_name)s account and "
+"sign in below:"
+msgstr ""
+
+#: shahid_aleali/templates/account/login.html:27
+msgid "or"
+msgstr ""
+
+#: shahid_aleali/templates/account/login.html:33
+#, python-format
+msgid ""
+"If you have not created an account yet, then please <a "
+"href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+
+#: shahid_aleali/templates/account/login.html:49
+msgid "Forgot Password?"
+msgstr ""
+
+#: shahid_aleali/templates/account/logout.html:6
+#: shahid_aleali/templates/account/logout.html:9
+#: shahid_aleali/templates/account/logout.html:18
+#: shahid_aleali/templates/base.html:86
+msgid "Sign Out"
+msgstr ""
+
+#: shahid_aleali/templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: shahid_aleali/templates/account/password_change.html:7
+#: shahid_aleali/templates/account/password_change.html:10
+#: shahid_aleali/templates/account/password_change.html:16
+#: shahid_aleali/templates/account/password_reset_from_key.html:7
+#: shahid_aleali/templates/account/password_reset_from_key.html:14
+#: shahid_aleali/templates/account/password_reset_from_key_done.html:6
+#: shahid_aleali/templates/account/password_reset_from_key_done.html:9
+msgid "Change Password"
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset.html:8
+#: shahid_aleali/templates/account/password_reset.html:11
+#: shahid_aleali/templates/account/password_reset_done.html:7
+#: shahid_aleali/templates/account/password_reset_done.html:10
+msgid "Password Reset"
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset.html:25
+msgid "Reset My Password"
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset_from_key.html:12
+msgid "Bad Token"
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset_from_key.html:20
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset_from_key.html:30
+msgid "change password"
+msgstr ""
+
+#: shahid_aleali/templates/account/password_reset_from_key.html:33
+#: shahid_aleali/templates/account/password_reset_from_key_done.html:10
+msgid "Your password is now changed."
+msgstr ""
+
+#: shahid_aleali/templates/account/password_set.html:7
+#: shahid_aleali/templates/account/password_set.html:10
+#: shahid_aleali/templates/account/password_set.html:19
+msgid "Set Password"
+msgstr ""
+
+#: shahid_aleali/templates/account/signup.html:7
+msgid "Signup"
+msgstr ""
+
+#: shahid_aleali/templates/account/signup.html:10
+#: shahid_aleali/templates/account/signup.html:25
+#: shahid_aleali/templates/base.html:92
+msgid "Sign Up"
+msgstr ""
+
+#: shahid_aleali/templates/account/signup.html:12
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: shahid_aleali/templates/account/signup_closed.html:6
+#: shahid_aleali/templates/account/signup_closed.html:9
+msgid "Sign Up Closed"
+msgstr ""
+
+#: shahid_aleali/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: shahid_aleali/templates/account/verification_sent.html:6
+#: shahid_aleali/templates/account/verification_sent.html:9
+#: shahid_aleali/templates/account/verified_email_required.html:6
+#: shahid_aleali/templates/account/verified_email_required.html:9
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: shahid_aleali/templates/account/verification_sent.html:11
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: shahid_aleali/templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: shahid_aleali/templates/account/verified_email_required.html:17
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: shahid_aleali/templates/account/verified_email_required.html:22
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: shahid_aleali/templates/base.html:82
+msgid "My Profile"
+msgstr ""
+
+#: shahid_aleali/users/admin.py:23
+msgid "Personal info"
+msgstr ""
+
+#: shahid_aleali/users/admin.py:25
+msgid "Permissions"
+msgstr ""
+
+#: shahid_aleali/users/admin.py:36
+msgid "Important dates"
+msgstr ""
+
+#: shahid_aleali/users/apps.py:7
+msgid "Users"
+msgstr ""
+
+#: shahid_aleali/users/forms.py:24 shahid_aleali/users/tests/test_forms.py:36
+msgid "This username has already been taken."
+msgstr ""
+
+#: shahid_aleali/users/models.py:15
+msgid "Name of User"
+msgstr ""
+
+#: shahid_aleali/users/tests/test_views.py:71 shahid_aleali/users/views.py:23
+msgid "Information successfully updated"
+msgstr ""
