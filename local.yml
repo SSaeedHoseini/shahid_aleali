@@ -12,7 +12,7 @@ services:
     image: shahid_aleali_local_django
     container_name: shahid_aleali_local_django
     depends_on:
-      - postgres
+      - postgres_shahid_aleali
       - redis
     volumes:
       - .:/app:z
@@ -29,7 +29,7 @@ services:
       - LETSENCRYPT_HOST=apiv2.iranzamin.site
       - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
 
-  postgres:
+  postgres_shahid_aleali:
     build:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
@@ -51,7 +51,7 @@ services:
     container_name: shahid_aleali_local_celeryworker
     depends_on:
       - redis
-      - postgres
+      - postgres_shahid_aleali
     ports: []
     command: /start-celeryworker
 
@@ -61,6 +61,6 @@ services:
     container_name: shahid_aleali_local_celerybeat
     depends_on:
       - redis
-      - postgres
+      - postgres_shahid_aleali
     ports: []
     command: /start-celerybeat
