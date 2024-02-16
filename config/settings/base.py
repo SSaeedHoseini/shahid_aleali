@@ -1,6 +1,7 @@
 """
 Base settings to build other settings files upon.
 """
+
 from pathlib import Path
 
 import environ
@@ -85,7 +86,6 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "shahid_aleali.users",
-    "schools",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
