@@ -21,14 +21,15 @@ services:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
-      - "2053:8000"
+      - "8080:8000"
     command: /start
-    # environment:
-    #   - name=shahid_aleali_local_django
-    #   - VIRTUAL_HOST=api.rahro.site,shahid-aleali.site
-    #   - LETSENCRYPT_HOST=api.rahro.site,shahid-aleali.site
-    #   - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
-    # network_mode: bridge
+    environment:
+      - name=shahid_aleali_local_django
+      - VIRTUAL_HOST=shahid-aleali.site,api.shahid-aleali.site
+      - LETSENCRYPT_HOST=shahid-aleali.site,api.shahid-aleali.site
+      - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
+    network_mode: bridge
+
 
   postgres_shahid_aleali:
     build:
@@ -41,33 +42,10 @@ services:
       - shahid_aleali_local_postgres_data_backups:/backups
     env_file:
       - ./.envs/.local/.postgres
-    # ports:
-    #   - "5454:5432"
-    # network_mode: bridge
 
   redis:
     image: redis:6
     container_name: shahid_aleali_local_redis
     network_mode: bridge
-    # ports:
-    #   - "7979:6379"
-
-  # celeryworker:
-  #   <<: *django
-  #   image: shahid_aleali_local_celeryworker
-  #   container_name: shahid_aleali_local_celeryworker
-  #   depends_on:
-  #     - redis
-  #     - postgres_shahid_aleali
-  #   ports: []
-  #   command: /start-celeryworker
-
-  # celerybeat:
-  #   <<: *django
-  #   image: shahid_aleali_local_celerybeat
-  #   container_name: shahid_aleali_local_celerybeat
-  #   depends_on:
-  #     - redis
-  #     - postgres_shahid_aleali
-  #   ports: []
-  #   command: /start-celerybeat
+    ports:
+      - "7979:6379"
