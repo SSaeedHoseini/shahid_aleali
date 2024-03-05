@@ -1,7 +1,7 @@
 # PostgreSQL
 # ------------------------------------------------------------------------------
 POSTGRES_HOST=postgres_shahid_aleali
-POSTGRES_PORT=5432
+POSTGRES_PORT=5454
 POSTGRES_DB=shahid_aleali
 POSTGRES_USER=debug
 POSTGRES_PASSWORD=debug
