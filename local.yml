@@ -28,6 +28,7 @@ services:
       - VIRTUAL_HOST=shahid-aleali.site
       - LETSENCRYPT_HOST=shahid-aleali.site
       - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
+      - VIRTUAL_PORT=8787
     network_mode: bridge
 
   postgres_shahid_aleali:
