@@ -24,7 +24,7 @@ services:
       - "8787:8000"
     command: /start
     environment:
-      - name=shahid-aleali-server
+      - name=shahid_aleali_local_django
       - VIRTUAL_HOST=api.rahro.site,shahid-aleali.site
       - LETSENCRYPT_HOST=api.rahro.site,shahid-aleali.site
       - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
