@@ -24,7 +24,7 @@ services:
       - "8787:8000"
     command: /start
     environment:
-      - name=nginx
+      - name=shahid-aleali-server
       - VIRTUAL_HOST=api.rahro.site,shahid-aleali.site
       - LETSENCRYPT_HOST=api.rahro.site,shahid-aleali.site
       - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
