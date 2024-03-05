@@ -25,8 +25,8 @@ services:
     command: /start
     environment:
       - name=nginx
-      - VIRTUAL_HOST=apiv2.iranzamin.site
-      - LETSENCRYPT_HOST=apiv2.iranzamin.site
+      - VIRTUAL_HOST=shahid-aleali.site
+      - LETSENCRYPT_HOST=shahid-aleali.site
       - LETSENCRYPT_SINGLE_DOMAIN_CERTS=true
 
   postgres_shahid_aleali:
@@ -45,22 +45,22 @@ services:
     image: redis:6
     container_name: shahid_aleali_local_redis
 
-  celeryworker:
-    <<: *django
-    image: shahid_aleali_local_celeryworker
-    container_name: shahid_aleali_local_celeryworker
-    depends_on:
-      - redis
-      - postgres_shahid_aleali
-    ports: []
-    command: /start-celeryworker
+  # celeryworker:
+  #   <<: *django
+  #   image: shahid_aleali_local_celeryworker
+  #   container_name: shahid_aleali_local_celeryworker
+  #   depends_on:
+  #     - redis
+  #     - postgres_shahid_aleali
+  #   ports: []
+  #   command: /start-celeryworker
 
-  celerybeat:
-    <<: *django
-    image: shahid_aleali_local_celerybeat
-    container_name: shahid_aleali_local_celerybeat
-    depends_on:
-      - redis
-      - postgres_shahid_aleali
-    ports: []
-    command: /start-celerybeat
+  # celerybeat:
+  #   <<: *django
+  #   image: shahid_aleali_local_celerybeat
+  #   container_name: shahid_aleali_local_celerybeat
+  #   depends_on:
+  #     - redis
+  #     - postgres_shahid_aleali
+  #   ports: []
+  #   command: /start-celerybeat
