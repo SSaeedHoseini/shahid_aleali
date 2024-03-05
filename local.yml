@@ -21,7 +21,7 @@ services:
       - ./.envs/.local/.django
       - ./.envs/.local/.postgres
     ports:
-      - "2058:8000"
+      - "2053:8000"
     command: /start
     # environment:
     #   - name=shahid_aleali_local_django
